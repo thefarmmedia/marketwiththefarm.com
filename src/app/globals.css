@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-orange: #FF5F00;
+  --color-orange-dark: #CC4C00;
+  --color-orange-light: #FF7A2E;
+  --color-black: #0A0A0A;
+  --color-dark: #111111;
+  --color-dark-card: #161616;
+  --color-dark-border: #2A2A2A;
+  --color-white: #FFFFFF;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #E5E5E5;
+  --color-gray-400: #9CA3AF;
+  --color-gray-500: #6B7280;
+  --color-gray-600: #4B5563;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --spacing-section: 6rem;
+  --spacing-section-sm: 4rem;
+
+  /* Border radius */
+  --radius-card: 0.75rem;
+  --radius-btn: 0.375rem;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.4);
+  --shadow-orange: 0 0 40px rgba(255,95,0,0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0A0A0A;
+  color: #FFFFFF;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom selection */
+::selection {
+  background: rgba(255, 95, 0, 0.3);
+  color: #FFFFFF;
+}
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid #FF5F00;
+  outline-offset: 2px;
+}
+
+/* Orange glow utility */
+.glow-orange {
+  box-shadow: 0 0 40px rgba(255, 95, 0, 0.2);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #FF5F00 0%, #FF7A2E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Noise texture overlay */
+.noise::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Animated border gradient */
+@keyframes borderRotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Section fade in */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+/* Pulse orange */
+@keyframes pulseOrange {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 95, 0, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(255, 95, 0, 0); }
+}
+
+.pulse-orange {
+  animation: pulseOrange 2s infinite;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5F00;
+}
