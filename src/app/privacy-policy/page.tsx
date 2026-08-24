@@ -45,12 +45,12 @@ export default function PrivacyPolicyPage() {
 
           <div>
             <h2 className="text-xl font-semibold text-white mb-3">Your Rights</h2>
-            <p>You may request access to, correction of, or deletion of your personal information at any time by contacting us at <a href="mailto:hello@marketwiththefarm.com" className="text-[#FF5F00] hover:underline">hello@marketwiththefarm.com</a>.</p>
+            <p>You may request access to, correction of, or deletion of your personal information at any time by contacting us at <a href="mailto:stephen@thefarmmedia.com" className="text-[#FF5F00] hover:underline">stephen@thefarmmedia.com</a>.</p>
           </div>
 
           <div>
             <h2 className="text-xl font-semibold text-white mb-3">Contact</h2>
-            <p>Questions about this policy? Contact The Farm Media at <a href="mailto:hello@marketwiththefarm.com" className="text-[#FF5F00] hover:underline">hello@marketwiththefarm.com</a>.</p>
+            <p>Questions about this policy? Contact The Farm Media at <a href="mailto:stephen@thefarmmedia.com" className="text-[#FF5F00] hover:underline">stephen@thefarmmedia.com</a>.</p>
           </div>
         </div>
       </div>

@@ -49,7 +49,7 @@ export default function ContactPage() {
             <div className="lg:col-span-2 bg-[#111111] border border-[#2A2A2A] rounded-2xl p-8 lg:p-10">
               <h2 className="text-2xl font-bold text-white mb-6">Tell us about your business</h2>
               <form
-                action="https://formsubmit.co/hello@marketwiththefarm.com"
+                action="https://formsubmit.co/stephen@thefarmmedia.com"
                 method="POST"
                 className="space-y-5"
                 aria-label="Contact form"
@@ -100,7 +100,7 @@ export default function ContactPage() {
                       required
                       autoComplete="tel"
                       className="w-full bg-[#0A0A0A] border border-[#2A2A2A] rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-[#FF5F00] transition-colors text-sm"
-                      placeholder="(417) 555-1234"
+                      placeholder="(417) 365-5383"
                     />
                   </div>
                   <div>
@@ -194,22 +194,22 @@ export default function ContactPage() {
               <div className="bg-[#111111] border border-[#2A2A2A] rounded-2xl p-6">
                 <h3 className="font-bold text-white mb-5">Prefer to reach out directly?</h3>
                 <div className="space-y-4">
-                  <a href="tel:+14175551234" className="flex items-center gap-3 text-gray-300 hover:text-[#FF5F00] transition-colors group">
+                  <a href="tel:+14173655383" className="flex items-center gap-3 text-gray-300 hover:text-[#FF5F00] transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-[#FF5F00]/10 flex items-center justify-center shrink-0 group-hover:bg-[#FF5F00]/20 transition-colors">
                       <Phone className="w-4 h-4 text-[#FF5F00]" aria-hidden="true" />
                     </div>
                     <div>
                       <div className="text-xs text-gray-500 mb-0.5">Call or Text</div>
-                      <div className="font-medium">(417) 555-1234</div>
+                      <div className="font-medium">(417) 365-5383</div>
                     </div>
                   </a>
-                  <a href="mailto:hello@marketwiththefarm.com" className="flex items-center gap-3 text-gray-300 hover:text-[#FF5F00] transition-colors group">
+                  <a href="mailto:stephen@thefarmmedia.com" className="flex items-center gap-3 text-gray-300 hover:text-[#FF5F00] transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-[#FF5F00]/10 flex items-center justify-center shrink-0 group-hover:bg-[#FF5F00]/20 transition-colors">
                       <Mail className="w-4 h-4 text-[#FF5F00]" aria-hidden="true" />
                     </div>
                     <div>
                       <div className="text-xs text-gray-500 mb-0.5">Email</div>
-                      <div className="font-medium text-sm">hello@marketwiththefarm.com</div>
+                      <div className="font-medium text-sm">stephen@thefarmmedia.com</div>
                     </div>
                   </a>
                   <div className="flex items-center gap-3 text-gray-300">

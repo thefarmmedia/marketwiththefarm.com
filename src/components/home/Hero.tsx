@@ -153,11 +153,11 @@ export default function Hero() {
             </Link>
 
             <a
-              href="tel:+14175551234"
+              href="tel:+14173655383"
               className="inline-flex items-center gap-2 text-gray-500 hover:text-white text-sm font-medium transition-colors sm:hidden"
             >
               <Phone className="w-4 h-4" aria-hidden="true" />
-              (417) 555-1234
+              (417) 365-5383
             </a>
           </div>
 

@@ -159,7 +159,7 @@ export default function MarketingScorecardPage() {
                 <div>
                   <label htmlFor="sc-phone" className="block text-sm text-gray-400 mb-1.5">Phone *</label>
                   <input id="sc-phone" required type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                    className="w-full bg-[#0A0A0A] border border-[#2A2A2A] rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none focus:border-[#FF5F00]" placeholder="(417) 555-1234" />
+                    className="w-full bg-[#0A0A0A] border border-[#2A2A2A] rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none focus:border-[#FF5F00]" placeholder="(417) 365-5383" />
                 </div>
                 <div>
                   <label htmlFor="sc-email" className="block text-sm text-gray-400 mb-1.5">Email *</label>

@@ -55,7 +55,7 @@ export default function TermsPage() {
 
           <div>
             <h2 className="text-xl font-semibold text-white mb-3">Contact</h2>
-            <p>Questions about these terms? Contact us at <a href="mailto:hello@marketwiththefarm.com" className="text-[#FF5F00] hover:underline">hello@marketwiththefarm.com</a>.</p>
+            <p>Questions about these terms? Contact us at <a href="mailto:stephen@thefarmmedia.com" className="text-[#FF5F00] hover:underline">stephen@thefarmmedia.com</a>.</p>
           </div>
         </div>
       </div>

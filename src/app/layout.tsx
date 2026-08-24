@@ -53,8 +53,8 @@ export default function RootLayout({
               url: 'https://marketwiththefarm.com',
               logo: 'https://marketwiththefarm.com/images/logo-orange.png',
               description: 'Customer acquisition systems for contractors and local service businesses.',
-              telephone: '+1-417-555-1234',
-              email: 'hello@marketwiththefarm.com',
+              telephone: '+1-417-365-5383',
+              email: 'stephen@thefarmmedia.com',
               address: {
                 '@type': 'PostalAddress',
                 addressLocality: 'Springfield',

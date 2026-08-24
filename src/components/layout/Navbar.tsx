@@ -133,12 +133,12 @@ export default function Navbar() {
           {/* Desktop CTAs */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+14175551234"
+              href="tel:+14173655383"
               className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-white transition-colors"
               aria-label="Call The Farm Media"
             >
               <Phone className="w-3.5 h-3.5" />
-              <span>(417) 555-1234</span>
+              <span>(417) 365-5383</span>
             </a>
             <Link
               href="/contact"
@@ -192,11 +192,11 @@ export default function Navbar() {
             ))}
             <div className="pt-4 border-t border-[#2A2A2A] space-y-3">
               <a
-                href="tel:+14175551234"
+                href="tel:+14173655383"
                 className="flex items-center gap-2 px-3 py-2.5 text-sm text-gray-300 hover:text-white"
               >
                 <Phone className="w-4 h-4 text-[#FF5F00]" />
-                (417) 555-1234
+                (417) 365-5383
               </a>
               <Link
                 href="/contact"

@@ -87,7 +87,7 @@ export default function SpringfieldPage() {
             '@type': 'LocalBusiness',
             name: 'The Farm Media',
             url: 'https://marketwiththefarm.com',
-            telephone: '+1-417-555-1234',
+            telephone: '+1-417-365-5383',
             address: {
               '@type': 'PostalAddress',
               addressLocality: 'Springfield',

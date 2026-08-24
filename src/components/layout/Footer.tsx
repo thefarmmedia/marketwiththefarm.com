@@ -77,13 +77,13 @@ export default function Footer() {
               Customer acquisition systems built specifically for contractors and local service businesses.
             </p>
             <div className="space-y-3">
-              <a href="tel:+14175551234" className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors">
+              <a href="tel:+14173655383" className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors">
                 <Phone className="w-3.5 h-3.5 text-[#FF5F00] shrink-0" />
-                (417) 555-1234
+                (417) 365-5383
               </a>
-              <a href="mailto:hello@marketwiththefarm.com" className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:stephen@thefarmmedia.com" className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors">
                 <Mail className="w-3.5 h-3.5 text-[#FF5F00] shrink-0" />
-                hello@marketwiththefarm.com
+                stephen@thefarmmedia.com
               </a>
               <div className="flex items-start gap-2 text-sm text-gray-400">
                 <MapPin className="w-3.5 h-3.5 text-[#FF5F00] shrink-0 mt-0.5" />
