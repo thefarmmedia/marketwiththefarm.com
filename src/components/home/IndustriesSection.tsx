@@ -16,36 +16,61 @@ const industries = [
 
 export default function IndustriesSection() {
   return (
-    <section className="bg-[#0A0A0A] py-20 lg:py-28" aria-labelledby="industries-heading">
+    <section className="bg-[#111111] py-24 lg:py-32" aria-labelledby="industries-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-12">
+
+        {/* Header */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-14">
           <div>
-            <div className="inline-block bg-[#FF5F00]/10 border border-[#FF5F00]/20 rounded-full px-4 py-1 mb-4">
-              <span className="text-[#FF5F00] text-sm font-medium">Industry Expertise</span>
+            <div className="inline-flex items-center gap-2 bg-[#FF5F00]/8 border border-[#FF5F00]/15 rounded-full px-4 py-1 mb-5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FF5F00]" aria-hidden="true" />
+              <span className="text-[#FF5F00] text-sm font-semibold tracking-wide">Industry Expertise</span>
             </div>
-            <h2 id="industries-heading" className="text-4xl sm:text-5xl font-bold text-white">
-              We Speak Contractor.
+            <h2 id="industries-heading" className="text-4xl sm:text-5xl font-black text-white leading-[1.05] tracking-tight">
+              We Speak<br />
+              <span className="gradient-text">Contractor.</span>
             </h2>
-            <p className="text-gray-400 mt-3 max-w-lg">
-              Generic marketing agencies don't understand your business. We're built specifically for trades and local service companies.
+            <p className="text-gray-500 mt-4 max-w-md leading-relaxed">
+              Generic agencies don&apos;t understand your business. We&apos;re built specifically for trades and local service companies.
             </p>
           </div>
-          <Link href="/industries" className="text-[#FF5F00] font-semibold hover:text-white transition-colors flex items-center gap-1.5 group whitespace-nowrap">
-            All industries
+          <Link
+            href="/industries"
+            className="flex items-center gap-2 text-[#FF5F00] font-semibold hover:text-white transition-colors group whitespace-nowrap text-sm"
+          >
+            View all industries
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
           </Link>
         </div>
 
+        {/* Cards grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {industries.map((ind) => (
             <Link
               key={ind.href}
               href={ind.href}
-              className="bg-[#111111] border border-[#2A2A2A] rounded-xl p-5 hover:border-[#FF5F00]/40 hover:bg-[#FF5F00]/5 transition-all duration-200 group"
+              className="relative group bg-[#0D0D0D] border border-[#1E1E1E] rounded-xl p-5 overflow-hidden transition-all duration-300 hover:border-[#FF5F00]/30 hover:-translate-y-0.5"
             >
-              <div className="text-3xl mb-3" aria-hidden="true">{ind.icon}</div>
-              <div className="font-bold text-white text-sm mb-1 group-hover:text-[#FF5F00] transition-colors">{ind.label}</div>
-              <div className="text-xs text-gray-500">{ind.desc}</div>
+              {/* Hover glow */}
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                style={{ background: 'radial-gradient(ellipse at 50% 0%, rgba(255,95,0,0.07) 0%, transparent 70%)' }}
+                aria-hidden="true"
+              />
+              {/* Bottom accent line */}
+              <div
+                className="absolute bottom-0 left-0 right-0 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style={{ background: 'linear-gradient(to right, transparent, rgba(255,95,0,0.5), transparent)' }}
+                aria-hidden="true"
+              />
+
+              <div className="relative">
+                <div className="text-3xl mb-4" aria-hidden="true">{ind.icon}</div>
+                <div className="font-bold text-white text-sm mb-1.5 group-hover:text-[#FF5F00] transition-colors duration-200">
+                  {ind.label}
+                </div>
+                <div className="text-xs text-gray-600 leading-relaxed">{ind.desc}</div>
+              </div>
             </Link>
           ))}
         </div>
