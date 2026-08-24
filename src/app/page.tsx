@@ -7,6 +7,7 @@ import StuckSection from '@/components/home/StuckSection'
 import LeadJourney from '@/components/home/LeadJourney'
 import IndustriesSection from '@/components/home/IndustriesSection'
 import ComparisonSection from '@/components/home/ComparisonSection'
+import TestimonialsSection from '@/components/home/TestimonialsSection'
 import CTASection from '@/components/home/CTASection'
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function HomePage() {
       <LeadJourney />
       <IndustriesSection />
       <ComparisonSection />
+      <TestimonialsSection />
       <CTASection />
     </>
   )
