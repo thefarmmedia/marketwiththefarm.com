@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Hero from '@/components/home/Hero'
 import ProofSection from '@/components/home/ProofSection'
+import StatsSection from '@/components/home/StatsSection'
 import ProblemSection from '@/components/home/ProblemSection'
 import GrowthSystem from '@/components/home/GrowthSystem'
 import StuckSection from '@/components/home/StuckSection'
@@ -24,6 +25,7 @@ export default function HomePage() {
     <>
       <Hero />
       <ProofSection />
+      <StatsSection />
       <ProblemSection />
       <GrowthSystem />
       <StuckSection />
