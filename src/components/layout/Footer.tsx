@@ -67,7 +67,7 @@ export default function Footer() {
                 alt="The Farm Media"
                 width={44}
                 height={44}
-                className="w-10 h-10 object-contain"
+                className="w-10 h-10 object-contain brightness-0 invert"
               />
               <span className="text-white font-bold text-lg leading-tight">
                 The Farm<br /><span className="text-[#FF5F00]">Media</span>

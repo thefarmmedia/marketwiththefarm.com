@@ -65,7 +65,7 @@ export default function Navbar() {
               alt="The Farm Media"
               width={44}
               height={44}
-              className="w-10 h-10 lg:w-11 lg:h-11 object-contain"
+              className="w-10 h-10 lg:w-11 lg:h-11 object-contain brightness-0 invert"
               priority
             />
             <span className="text-white font-bold text-lg hidden sm:block tracking-tight">
