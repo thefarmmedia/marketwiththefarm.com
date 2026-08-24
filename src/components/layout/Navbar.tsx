@@ -50,9 +50,9 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#0A0A0A]/95 backdrop-blur-md border-b border-[#2A2A2A]'
+          ? 'bg-[#0A0A0A]/80 backdrop-blur-xl border-b border-white/[0.06]'
           : 'bg-transparent'
       }`}
     >
@@ -104,7 +104,7 @@ export default function Navbar() {
                     onMouseEnter={() => setActiveDropdown(item.label)}
                     onMouseLeave={() => setActiveDropdown(null)}
                   >
-                    <div className="bg-[#161616] border border-[#2A2A2A] rounded-xl p-2 shadow-2xl min-w-[280px]">
+                    <div className="bg-[#0F0F0F]/90 backdrop-blur-xl border border-white/[0.07] rounded-xl p-2 shadow-2xl min-w-[280px]" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.05)' }}>
                       {item.children.map((child) => (
                         <Link
                           key={child.href}
@@ -142,7 +142,8 @@ export default function Navbar() {
             </a>
             <Link
               href="/contact"
-              className="bg-[#FF5F00] hover:bg-[#CC4C00] text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors whitespace-nowrap active:scale-95"
+              className="relative overflow-hidden bg-[#FF5F00] hover:bg-[#E55500] text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-all duration-200 whitespace-nowrap active:scale-95 group"
+              style={{ boxShadow: '0 0 20px rgba(255,95,0,0.3)' }}
             >
               Get a Free Growth Plan
             </Link>

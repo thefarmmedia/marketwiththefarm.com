@@ -82,7 +82,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-[#0A0A0A] text-white antialiased">
+      <body className="grain bg-[#0A0A0A] text-white antialiased relative">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#FF5F00] text-white px-4 py-2 rounded-md z-[100] font-medium">
           Skip to main content
         </a>
