@@ -50,8 +50,8 @@ const results = [
 ]
 
 const logos = [
-  'Concrete Pro', 'MO HVAC', 'Peak Roofing', 'City Plumbing',
-  'Volt Electric', 'Green Turf', 'Apex Garage', 'Clean & Bright',
+  'Show Me Epoxy', 'HH Next Level Epoxy', 'Twin Lakes Epoxy', 'Crete Creations',
+  'Grand Slam', 'Shippmates Epoxy', 'Field of Screams Nixa', 'Missouri Epic', 'The Farm Media',
 ]
 
 function ResultCard({ r, index }: { r: typeof results[0]; index: number }) {
