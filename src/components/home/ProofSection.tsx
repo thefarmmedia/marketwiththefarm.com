@@ -165,7 +165,7 @@ export default function ProofSection() {
         {/* Logo marquee */}
         <div className="border-t border-[#1A1A1A] pt-14 mb-12">
           <p className="text-center text-gray-700 text-[11px] uppercase tracking-[0.25em] font-semibold mb-8">
-            Trusted by contractors across the Midwest
+            Trusted by businesses across Missouri
           </p>
           <div className="relative overflow-hidden">
             {/* Fade edges */}
