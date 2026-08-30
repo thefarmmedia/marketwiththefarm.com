@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ArrowRight, Wrench, BarChart3, Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About The Farm Media — Built by Operators, Not Just Marketers',
+  title: 'About The Farm Media — Built by Operators, Not Just Marketers | The Farm Media',
   description: 'The Farm Media was built by people who understand how local service businesses actually work — seasonality, estimates, lead quality, crew capacity, and the difference between impressions and income.',
   alternates: {
     canonical: 'https://marketwiththefarm.com/about',
@@ -67,7 +67,7 @@ export default function AboutPage() {
               Website. Google. Ads. CRM. Follow-up. Reviews. All connected. All tracked. All accountable.
             </p>
             <p>
-              Based in Springfield, MO. Built for contractors who are serious about growing.
+              Based in Fair Grove, MO, and serving Springfield and the surrounding region.
             </p>
           </div>
         </div>

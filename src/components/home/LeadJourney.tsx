@@ -106,7 +106,7 @@ export default function LeadJourney() {
   useEffect(() => {
     if (!running) return
     if (visible >= steps.length - 1) {
-      intervalRef.current && clearInterval(intervalRef.current)
+      if (intervalRef.current) clearInterval(intervalRef.current)
       return
     }
     intervalRef.current = setInterval(() => {

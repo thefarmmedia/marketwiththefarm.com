@@ -50,22 +50,22 @@ const testimonials = [
 export default function TestimonialsSection() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' })
   const [selectedIndex, setSelectedIndex] = useState(0)
-  const [canScrollPrev, setCanScrollPrev] = useState(false)
-  const [canScrollNext, setCanScrollNext] = useState(true)
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return
     setSelectedIndex(emblaApi.selectedScrollSnap())
-    setCanScrollPrev(emblaApi.canScrollPrev())
-    setCanScrollNext(emblaApi.canScrollNext())
   }, [emblaApi])
 
   useEffect(() => {
     if (!emblaApi) return
-    onSelect()
+    const frame = requestAnimationFrame(onSelect)
     emblaApi.on('select', onSelect)
     emblaApi.on('reInit', onSelect)
-    return () => { emblaApi.off('select', onSelect); emblaApi.off('reInit', onSelect) }
+    return () => {
+      cancelAnimationFrame(frame)
+      emblaApi.off('select', onSelect)
+      emblaApi.off('reInit', onSelect)
+    }
   }, [emblaApi, onSelect])
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi])

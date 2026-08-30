@@ -37,7 +37,7 @@ export default function SpringfieldPage() {
               <span className="text-[#FF5F00]">Marketing Agency.</span>
             </h1>
             <p className="text-xl text-gray-400 leading-relaxed mb-8">
-              The Farm Media is based in Springfield, MO and works with contractors across the Ozarks region. We know the Springfield market, the competition, and what it takes to rank and generate leads here.
+              The Farm Media is based nearby in Fair Grove and works with contractors across Springfield and the Ozarks region. We build websites, local SEO, advertising, and follow-up systems for local service businesses.
             </p>
             <Link href="/contact" className="inline-flex items-center gap-2 bg-[#FF5F00] hover:bg-[#CC4C00] text-white font-bold px-7 py-3.5 rounded-md transition-colors group">
               Get a Free Growth Plan
@@ -62,9 +62,9 @@ export default function SpringfieldPage() {
           <div className="bg-[#0A0A0A] border border-[#2A2A2A] rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-white mb-5">Why Springfield Contractors Work With The Farm</h2>
             <div className="space-y-4 text-gray-400">
-              <p>We're not a remote agency that's never seen your market. We understand Springfield — the competitive landscape, the service areas, the neighborhoods that drive demand, and the search behavior of Ozarks homeowners.</p>
-              <p>Springfield contractors across concrete coatings, HVAC, roofing, electrical, landscaping, and more have used our systems to grow their lead volume, increase Google rankings, and build the kind of online presence that makes them the obvious choice in their category.</p>
-              <p>We're based here. We answer the phone. And we actually understand how contractors get paid.</p>
+              <p>We serve Springfield from nearby Fair Grove and focus on the practical parts of contractor marketing: clear service pages, local search visibility, lead tracking, and fast follow-up.</p>
+              <p>Our work covers concrete coatings and other local service businesses across the Ozarks.</p>
+              <p>We answer the phone and build around how contractors actually sell and schedule work.</p>
             </div>
           </div>
         </div>
@@ -88,18 +88,7 @@ export default function SpringfieldPage() {
             name: 'The Farm Media',
             url: 'https://marketwiththefarm.com',
             telephone: '+1-417-365-5383',
-            address: {
-              '@type': 'PostalAddress',
-              addressLocality: 'Springfield',
-              addressRegion: 'MO',
-              postalCode: '65801',
-              addressCountry: 'US',
-            },
-            geo: {
-              '@type': 'GeoCoordinates',
-              latitude: 37.2153,
-              longitude: -93.2982,
-            },
+            hasMap: 'https://maps.app.goo.gl/366yjLgJRW18MuPY6',
             areaServed: [
               { '@type': 'City', name: 'Springfield', containedIn: 'Missouri' },
               { '@type': 'City', name: 'Nixa', containedIn: 'Missouri' },

@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: {
     default: 'The Farm Media — Contractor Marketing That Generates Customers',
-    template: '%s | The Farm Media',
+    template: '%s',
   },
   description: 'The Farm Media builds customer acquisition systems for contractors and local service businesses — websites, SEO, Google Ads, automation, and reputation management working together to fill your schedule.',
   metadataBase: new URL('https://marketwiththefarm.com'),
@@ -21,9 +21,17 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'The Farm Media',
     locale: 'en_US',
+    url: 'https://marketwiththefarm.com',
+    images: [{
+      url: '/images/logo-orange.png',
+      width: 1254,
+      height: 1254,
+      alt: 'The Farm Media contractor marketing agency',
+    }],
   },
   twitter: {
     card: 'summary_large_image',
+    images: ['/images/logo-orange.png'],
   },
   robots: {
     index: true,
@@ -57,7 +65,7 @@ export default function RootLayout({
               email: 'stephen@thefarmmedia.com',
               address: {
                 '@type': 'PostalAddress',
-                addressLocality: 'Springfield',
+                addressLocality: 'Fair Grove',
                 addressRegion: 'MO',
                 addressCountry: 'US',
               },
@@ -65,10 +73,11 @@ export default function RootLayout({
                 '@type': 'State',
                 name: 'Missouri',
               },
+              hasMap: 'https://maps.app.goo.gl/366yjLgJRW18MuPY6',
               sameAs: [
-                'https://facebook.com/thefarmmedia',
-                'https://instagram.com/thefarmmedia',
-                'https://linkedin.com/company/thefarmmedia',
+                'https://maps.app.goo.gl/366yjLgJRW18MuPY6',
+                'https://www.facebook.com/Thefarmmarketing',
+                'https://www.yelp.com/biz/the-farm-media-fair-grove',
               ],
               serviceType: [
                 'Web Design',

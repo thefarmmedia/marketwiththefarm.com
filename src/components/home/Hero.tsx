@@ -166,7 +166,7 @@ export default function Hero() {
             className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-[#1A1A1A] rounded-2xl overflow-hidden border border-[#2A2A2A] animate-fade-up opacity-0"
             style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}
           >
-            {stats.map((s, i) => (
+            {stats.map((s) => (
               <div
                 key={s.label}
                 className="bg-[#0D0D0D] px-6 py-5 group hover:bg-[#111] transition-colors"
