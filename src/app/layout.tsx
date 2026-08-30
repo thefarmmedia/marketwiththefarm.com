@@ -78,6 +78,8 @@ export default function RootLayout({
                 'https://maps.app.goo.gl/366yjLgJRW18MuPY6',
                 'https://www.facebook.com/Thefarmmarketing',
                 'https://www.yelp.com/biz/the-farm-media-fair-grove',
+                'https://business.foursquare.com/places/6a93fe005ec7db6895153e51',
+                'https://nextdoor.com/page/the-farm-media-fair-grove-mo',
               ],
               serviceType: [
                 'Web Design',
