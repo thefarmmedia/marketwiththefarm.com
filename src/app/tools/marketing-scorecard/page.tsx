@@ -25,8 +25,6 @@ const questions: Score[] = [
   { category: 'Follow-Up', question: 'Do you have automated follow-up that fires when you can\'t answer the phone?', answer: null, weight: 10, tip: 'Missed-call text back alone recovers 15–30% of leads that would otherwise be lost.' },
 ]
 
-const services = ['Web Design', 'Local SEO', 'Google Ads', 'Facebook Ads', 'CRM & Automation', 'Full Growth System', 'Not sure']
-
 export default function MarketingScorecardPage() {
   const [scores, setScores] = useState<Score[]>(questions)
   const [step, setStep] = useState<'quiz' | 'info' | 'results'>('quiz')

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { CheckCircle, Smartphone, Zap, Search, Phone, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Contractor Web Design — Websites That Generate Leads, Not Just Impressions',
+  title: 'Contractor Web Design — Websites That Generate Leads | The Farm Media',
   description: 'The Farm Media builds high-converting websites for contractors and local service businesses. Mobile-first, fast-loading, SEO-ready, and designed to turn visitors into booked jobs.',
   alternates: {
     canonical: 'https://marketwiththefarm.com/services/web-design',

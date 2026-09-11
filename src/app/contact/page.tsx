@@ -218,7 +218,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-xs text-gray-500 mb-0.5">Based in</div>
-                      <div className="font-medium">Springfield, MO</div>
+                      <div className="font-medium">Fair Grove, MO</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 text-gray-300">

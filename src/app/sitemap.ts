@@ -27,16 +27,25 @@ const pages = [
   { url: '/industries/painter-marketing', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/industries/general-contractor-marketing', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/case-studies', priority: 0.8, changeFrequency: 'weekly' as const },
+  { url: '/case-studies/crete-creations', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/case-studies/field-of-screams-nixa', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/case-studies/grand-slam', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/case-studies/hh-next-level-epoxy', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/case-studies/missouri-epic', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/case-studies/shippmates-epoxy', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/case-studies/show-me-epoxy', priority: 0.7, changeFrequency: 'monthly' as const },
+  { url: '/case-studies/twin-lakes-epoxy', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/resources', priority: 0.7, changeFrequency: 'weekly' as const },
   { url: '/springfield-mo', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/springfield-mo/seo', priority: 0.8, changeFrequency: 'monthly' as const },
+  { url: '/springfield-mo/web-design', priority: 0.8, changeFrequency: 'monthly' as const },
   { url: '/tools/marketing-scorecard', priority: 0.7, changeFrequency: 'monthly' as const },
   { url: '/tools/roi-calculator', priority: 0.7, changeFrequency: 'monthly' as const },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return pages.map((page) => ({
-    url: `${baseUrl}${page.url}`,
-    lastModified: new Date(),
+    url: page.url === '/' ? `${baseUrl}/` : `${baseUrl}${page.url}/`,
     changeFrequency: page.changeFrequency,
     priority: page.priority,
   }))

@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState, useCallback } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const stats = [
   { value: 500, suffix: '+', label: 'Leads generated this month', prefix: '' },
@@ -14,20 +14,19 @@ function useCountUp(target: number, duration = 1800, decimals = 0, active: boole
   const raf = useRef<number | null>(null)
   const start = useRef<number | null>(null)
 
-  const run = useCallback((ts: number) => {
-    if (!start.current) start.current = ts
-    const pct = Math.min((ts - start.current) / duration, 1)
-    const ease = 1 - Math.pow(1 - pct, 3)
-    setCount(parseFloat((ease * target).toFixed(decimals)))
-    if (pct < 1) raf.current = requestAnimationFrame(run)
-  }, [target, duration, decimals])
-
   useEffect(() => {
     if (!active) return
     start.current = null
+    const run = (ts: number) => {
+      if (!start.current) start.current = ts
+      const pct = Math.min((ts - start.current) / duration, 1)
+      const ease = 1 - Math.pow(1 - pct, 3)
+      setCount(parseFloat((ease * target).toFixed(decimals)))
+      if (pct < 1) raf.current = requestAnimationFrame(run)
+    }
     raf.current = requestAnimationFrame(run)
     return () => { if (raf.current) cancelAnimationFrame(raf.current) }
-  }, [active, run])
+  }, [active, target, duration, decimals])
 
   return decimals > 0 ? count.toFixed(decimals) : Math.floor(count).toString()
 }

@@ -33,9 +33,9 @@ export function buildMetadata({
       type: 'website',
       images: [
         {
-          url: `${siteUrl}/images/og-default.jpg`,
-          width: 1200,
-          height: 630,
+          url: `${siteUrl}/images/logo-orange.png`,
+          width: 1254,
+          height: 1254,
           alt: `${siteName} — Contractor Marketing That Generates Customers`,
         },
       ],
@@ -44,6 +44,7 @@ export function buildMetadata({
       card: 'summary_large_image',
       title: fullTitle,
       description,
+      images: [`${siteUrl}/images/logo-orange.png`],
     },
     robots: noIndex
       ? { index: false, follow: false }

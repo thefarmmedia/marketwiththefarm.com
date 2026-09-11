@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Globe, Search, Megaphone, Share2, Database, Star, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Contractor Marketing Services — Web Design, SEO, Google Ads & More',
+  title: 'Contractor Marketing Services — Web Design, SEO, Google Ads & More | The Farm Media',
   description: 'The Farm Media offers web design, local SEO, Google Ads, Facebook Ads, CRM automation, and reputation management for contractors and local service businesses in Missouri and beyond.',
   alternates: {
     canonical: 'https://marketwiththefarm.com/services',
