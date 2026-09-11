@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, TrendingUp, Phone, Star, MapPin } from 'lucide-react'
+import { ArrowRight, TrendingUp, Phone, Star, MapPin, ExternalLink } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Contractor Marketing Case Studies — Real Results from Real Businesses | The Farm Media',
@@ -9,6 +9,23 @@ export const metadata: Metadata = {
 }
 
 const caseStudies = [
+  {
+    slug: 'ozarks-concrete-coatings',
+    client: 'Ozarks Concrete Coatings',
+    industry: 'Concrete Coatings',
+    location: 'Missouri Ozarks',
+    url: 'ozarksconcretecoatings.com',
+    problem: 'Brand new business with zero online presence. Needed to build credibility, rankings, and a lead pipeline from scratch in a competitive local market.',
+    result: "The Farm's founding client — 6 years of compounding growth turned a new startup into the #1-ranked garage floor company in their market.",
+    metrics: [
+      { label: 'Client Since', value: '6 Years', icon: Star },
+      { label: 'Market Position', value: '#1', icon: TrendingUp },
+      { label: 'Reviews', value: 'Hundreds', icon: Star },
+      { label: 'Leads', value: 'Daily', icon: Phone },
+    ],
+    services: ['Web Design', 'Local SEO', 'Google Ads', 'CRM Automation', 'Review Generation', 'Facebook Ads'],
+    featured: true,
+  },
   {
     slug: 'show-me-epoxy',
     client: 'Show Me Epoxy',
@@ -188,6 +205,9 @@ export default function CaseStudiesPage() {
                       <h2 className="text-white font-black text-2xl">{cs.client}</h2>
                       <span className="bg-[#FF5F00]/10 border border-[#FF5F00]/20 text-[#FF5F00] text-xs font-semibold px-2.5 py-1 rounded-full">{cs.industry}</span>
                       <span className="text-gray-500 text-sm flex items-center gap-1"><MapPin className="w-3 h-3" />{cs.location}</span>
+                      <a href={`https://${cs.url}`} target="_blank" rel="noopener noreferrer" className="text-gray-600 text-xs flex items-center gap-1 hover:text-[#FF5F00] transition-colors">
+                        <ExternalLink className="w-3 h-3" />{cs.url}
+                      </a>
                     </div>
                     <div className="mb-4">
                       <div className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1.5">The Problem</div>
@@ -235,10 +255,14 @@ export default function CaseStudiesPage() {
                 <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                   <div>
                     <h2 className="text-white font-black text-lg mb-1">{cs.client}</h2>
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
                       <span className="text-[#FF5F00]/70 text-xs font-semibold">{cs.industry}</span>
                       <span className="w-1 h-1 rounded-full bg-[#2A2A2A]" aria-hidden="true" />
                       <span className="text-gray-600 text-xs flex items-center gap-1"><MapPin className="w-2.5 h-2.5" />{cs.location}</span>
+                      <span className="w-1 h-1 rounded-full bg-[#2A2A2A]" aria-hidden="true" />
+                      <a href={`https://${cs.url}`} target="_blank" rel="noopener noreferrer" className="text-gray-600 text-xs flex items-center gap-1 hover:text-[#FF5F00] transition-colors">
+                        <ExternalLink className="w-2.5 h-2.5" />{cs.url}
+                      </a>
                     </div>
                   </div>
                   <Link

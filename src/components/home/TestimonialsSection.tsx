@@ -7,6 +7,14 @@ import { Star, ChevronLeft, ChevronRight } from 'lucide-react'
 const testimonials = [
   {
     stars: 5,
+    quote: "The Farm has been with us since before we had a single customer. They built everything — the website, the ads, the reviews, the whole system. Six years later we're the top-ranked garage floor company in our market and leads come in every single day.",
+    name: 'Ozarks Concrete Coatings',
+    company: 'Ozarks Concrete Coatings',
+    location: 'Missouri Ozarks',
+    result: '6-year client since day 1',
+  },
+  {
+    stars: 5,
     quote: "Before The Farm, I was spending money on ads and had no idea where my leads were coming from. Now I know exactly what's working, my cost per lead dropped dramatically, and the phone actually rings. These guys know the epoxy business.",
     name: 'Show Me Epoxy',
     company: 'Show Me Epoxy',

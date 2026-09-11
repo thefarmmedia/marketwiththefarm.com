@@ -50,7 +50,7 @@ const results = [
 ]
 
 const logos = [
-  'Show Me Epoxy', 'HH Next Level Epoxy', 'Twin Lakes Epoxy', 'Crete Creations',
+  'Ozarks Concrete Coatings', 'Show Me Epoxy', 'HH Next Level Epoxy', 'Twin Lakes Epoxy', 'Crete Creations',
   'Grand Slam', 'Shippmates Epoxy', 'Field of Screams Nixa', 'Missouri Epic', 'The Farm Media',
 ]
 
